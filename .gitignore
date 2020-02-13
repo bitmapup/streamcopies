@@ -131,4 +131,5 @@ dmypy.json
 #Data folders
 data/
 data_output/
+lib/
 .txt
