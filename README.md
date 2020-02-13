@@ -12,26 +12,13 @@
 
 ## Data dictionary
 
-	* client_id,    #-- 0  
         * social_class ,     #-- 1
-        * date,              #-- 2
-        * mcc,               #-- 3
-        * country_code,      #-- 4
-        * amount_usd,        #-- 5 *
-        * client_age,        #-- 6 *
-        * client_gender,     #-- 7
-        * debit_type,        #-- 8 Credit or debit card
-        * agency_id,         #-- 9
-        * agency_departement,#-- 10 
-        * agency_province,   #-- 11
-        * agency_district,   #-- 12
-        * agency_lima,       #-- 13
-        * agency_region,     #-- 14
-        * merchant_id,       #-- 15
-        * merchant_departement, #-- 16
-        * merchant_province, #-- 17
-        * merchant_district, #-- 18
-        * merchant_lon,      #-- 19 *
-        * merchant_lat       #-- 20*
+        * country_code,      #-- 2
+        * amount_usd,        #-- 3 *
+        * client_age,        #-- 4 *
+        * client_gender,     #-- 5
+        * debit_type,        #-- 6 Credit or debit card
+        * agency_region,     #-- 7
+        * merchant_departement, #-- 8
 
 \* Numeric variable, all other are categorical
