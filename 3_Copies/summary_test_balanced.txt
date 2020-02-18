@@ -1,0 +1,6 @@
+# TEST CONFIGURATION BEGIN
+# FileStream(filename='balanced.csv', target_idx=-1, n_targets=1, cat_features=None)
+# [M0] EvaluatePrequential(batch_size=10, data_points_for_classification=False, max_samples=100, max_time=10000, metrics=['accuracy'], n_wait=200, output_file='summary_test_balanced.txt', pretrain_size=1000, restart_stream=True, show_plot=False)
+# EvaluatePrequential(batch_size=10, data_points_for_classification=False, max_samples=100, max_time=10000, metrics=['accuracy'], n_wait=200, output_file='summary_test_balanced.txt', pretrain_size=1000, restart_stream=True, show_plot=False)
+# TEST CONFIGURATION END
+id,mean_acc_[M0],current_acc_[M0]
