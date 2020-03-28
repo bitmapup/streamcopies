@@ -15,7 +15,7 @@ import random
 import csv
 import numpy as np
 import os
-
+from methods import HoeffdingTree
 from sklearn.metrics import confusion_matrix
 print ('\n'.join(sys.path))
 

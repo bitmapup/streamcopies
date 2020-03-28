@@ -1,2 +1,1 @@
 size_win,precision,recall,count,tn, fp, fn, tp
-10000,0.9073303686702051,0.9166666666666666,(array([0, 1], dtype=int8), array([13029,  6971])),12454,646,575,6325
