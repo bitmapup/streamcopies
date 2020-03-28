@@ -16,12 +16,16 @@ import numpy as np
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.utils import check_array, check_consistent_length
 
-from base_HoeffdingTree import BaseHoeffdingTree
+#from methods.base_HoeffdingTree import BaseHoeffdingTree
+#from methods.base_SVM import BaseSVM
+#from methods.base_MLP import BaseMLP
 
 import sys
 sys.path.insert(0, '/Users/irene/Documents/Projects/dual/scripts/methods/')
 
 from base_HoeffdingTree import BaseHoeffdingTree
+#from base_OnlineSVM import BaseOnlineSVM
+#from base_CopyOnlineSVM import BaseCopyOnlineSVM
 
 class HoeffdingTree(BaseHoeffdingTree):
     """ A Hoeffding tree classifier.
@@ -55,18 +59,14 @@ class HoeffdingTree(BaseHoeffdingTree):
         """
 
     def __init__(self,
-                 splitter="mean",
+                 split_criterion="mean",
                  min_samples_split=100,
-                 max_samples=1000,
-                 min_samples_leaf = 1,
                  min_samples_split_lower = 2,
                  max_depth=None,
                  random_state=None):
 
-        super(HoeffdingTree, self).__init__(splitter=splitter,
+        super(HoeffdingTree, self).__init__(split_criterion=split_criterion,
                                             min_samples_split=min_samples_split,
-                                            max_samples=max_samples,
-                                            min_samples_leaf=min_samples_leaf,
                                             min_samples_split_lower=min_samples_split_lower,
                                             max_depth=max_depth,
                                             random_state=random_state)
@@ -98,7 +98,7 @@ class HoeffdingTree(BaseHoeffdingTree):
         return self
     
     def predict_proba(self, X):
-        """ Compute a class probability estiamtor.
+        """ Compute a class probability estimator.
 
             Parameters
             ----------
